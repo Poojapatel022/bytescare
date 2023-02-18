@@ -1,0 +1,36 @@
+.whybytescareCard {
+    width: 360px;
+    height: 340px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    margin: 4rem;
+    padding: 1rem;
+}
+
+
+/* @media (max-width:992px) {
+    .whybytescareCard {
+        width: auto;
+        height: 340px;
+        margin: 4rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .whybytescareCard {
+        width: 360px;
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+    .whybytescareCard {
+        width: 360px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+} */

@@ -1,0 +1,60 @@
+.navbar-nav {
+    gap: 40px;
+    /* default spacing */
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+
+/* Styles for web view only */
+
+@media screen and (max-width: 900px) {
+    .navbar-nav {
+        gap: 40px;
+        /* increased spacing */
+    }
+    .logo {
+        margin-left: 4rem!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        gap: 40px;
+        /* increased spacing */
+    }
+    .logo {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .navbar-nav {
+        gap: 40px;
+        /* increased spacing */
+    }
+    .logo {
+        margin-left: 1rem!important;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.navbar-nav .nav-link.active::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    border: 2px solid #ffa300;
+    border-radius: 10px;
+    background-color: #ffa300;
+}

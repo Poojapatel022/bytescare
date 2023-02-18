@@ -1,0 +1,46 @@
+        .accordion {
+            background: unset !important;
+        }
+        
+        .headingCollapse {
+            font-family: 'Poppins', sans-serif !important;
+            width: 100%;
+            text-align: right;
+            margin-right: 1.5rem;
+        }
+        
+        .headingCollapse h3 {
+            font-weight: 500;
+            font-size: 20px;
+            color: #ffa300;
+            background-color: unset !important;
+        }
+        
+        .extraInfo {
+            width: 104px;
+            padding: 10px;
+            gap: 12px;
+            border: 1px solid #F0F0F0;
+            border-radius: 8px;
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .headingId .accordion-button .headingCollapse h3::after {
+            flex-shrink: 0;
+            margin-left: auto;
+            content: "";
+            background-image: url(/images/dropdownicon.svg);
+            transition: var(--bs-accordion-btn-icon-transition);
+            color: #ffa300 !important;
+        }
+        
+        .productsServices .headingId .accordion-button .headingCollapse h3 ::after,
+        .productsServices .headingId .accordion-button:not(.collapsed)::after {
+            background-image: url(/images/dropdownicon.svg);
+        }
+        
+        .headingId .accordion-button:not(.collapsed)::after {
+            transform: var(--bs-accordion-btn-icon-transform);
+        }
